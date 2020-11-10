@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 最近又來亂玩了，基於之前弄的LineTV的影片解析，在LineTV上面弄某些劇下來的時候，會遇到影片字幕分離的情形，如果用的是KODI、emby或是一些能夠自動抓字幕檔串流平台，並且支援眾多編碼的話，那倒還好，基本上還不還有太大的影響，頂多就是預設字體太小，整體觀影感受不夠舒服罷了
+但若是用電腦，或是早個幾年出來的“半智慧“電視，就算能夠解析srt，編碼也不見得支援的夠多，電視的話，或許FHD(60FPS)&#43;解字幕&#43;嵌入已經超載，處理器跟不上，整個使用體驗爛到難以形容，這裡拖那裡卡的
+所以這次就研究了一下怎麽合併單檔，反正原檔也都留著，GoogleDrive沒限制就隨便塞，或是剛好需要給長輩看的劇，就順便把字體弄大一點壓進去。
+硬字幕、軟字幕 我也不知道標題要怎麽下，反正我就是隨筆寫寫，給我自己做個記錄，我還是會儘量寫得詳細，能幫到你的話，再好不過，看不慣、不想看的不送
+這些名詞應該是對岸來的，應該就是前幾年字幕組的時代出來的字吧
+硬字幕 硬字幕，又稱為“內嵌字幕“，簡單地說，就是把字幕寫(壓)到影片中，按照srt定義的timestamp與subtitle content，把字幕壓到video stream中的每一個frame(這邊觀念不知道有沒有錯)，總之，硬字幕是沒辦法關掉的，已經壓在每一幀裡面了，完全無法分離，也沒辦法更改字體、大小之類的，優點就是對於播放裝置、播放軟體毫無要求，只要能夠解碼對應的影片格式，字幕就能夠正常顯示
+軟字幕 軟字幕就被稱為”外掛字幕“，副檔名通常是.ass、.ssa、.sub，可以讓kodi自動抓進去內嵌，在播放程式支援的情況下，隨時可以調整字體、大小、顏色，也可以定義好之後封裝到影片裡面(mkv)，但就需要系統有對應的視訊解碼器、字元解碼器、渲染工具，不然就會有一堆莫名其妙的錯誤
+這邊也就是大概解釋一下，字幕其實分了兩種，今天寫的就是操作上面比較簡單的硬字幕吧
+說明 先說一下最基本的用法吧：
+root@ASUSPRO:~#tree ./ / ├── ABC.srt └── ABC.mp4 0 directories, 2 files 最簡單的用法，直接壓字幕，沒記錯的話default font size似乎是12
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt&amp;#34; 如果要另外修改字體大小為24
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt:force_style=&amp;#39;Fontsize=24&amp;#39;&amp;#34; 修改字體大小為24 &#43; 字體顏色為正藍色(0, 0, 255) ，這邊PrimaryColour一律以&amp;amp;H開頭&amp;amp;結尾，中間是16進制RGB色碼
+$ ffmpeg -i ABC.mp4 -vf &amp;quot;subtitles=ABC.srt:force_style=&#39;Fontsize=24,PrimaryColour=&amp;amp;H0000ff&amp;amp;&#39;&amp;quot; 其實這邊用到的force_style設定項，規範按照ASS的定義，有興趣的可以參考這裡
+這裡舉例另外一個是我最常用的使用情境，就是整季都載完了XD，然後要下命令壓整個資料夾的影片，在命名有一定的規則的情況下
+root@ASUSPRO:~#tree ./ / ├── XYZ_EP1(Subtitle).srt ├── XYZ_EP1.mp4 ├── XYZ_EP2(Subtitle).srt ├── XYZ_EP2.mp4 ├── XYZ_EP3(Subtitle).srt ├── XYZ_EP3.'><title>使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)</title>
+    
+    <link rel='canonical' href='https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)'>
+<meta property='og:description' content='前言 最近又來亂玩了，基於之前弄的LineTV的影片解析，在LineTV上面弄某些劇下來的時候，會遇到影片字幕分離的情形，如果用的是KODI、emby或是一些能夠自動抓字幕檔串流平台，並且支援眾多編碼的話，那倒還好，基本上還不還有太大的影響，頂多就是預設字體太小，整體觀影感受不夠舒服罷了
+但若是用電腦，或是早個幾年出來的“半智慧“電視，就算能夠解析srt，編碼也不見得支援的夠多，電視的話，或許FHD(60FPS)&#43;解字幕&#43;嵌入已經超載，處理器跟不上，整個使用體驗爛到難以形容，這裡拖那裡卡的
+所以這次就研究了一下怎麽合併單檔，反正原檔也都留著，GoogleDrive沒限制就隨便塞，或是剛好需要給長輩看的劇，就順便把字體弄大一點壓進去。
+硬字幕、軟字幕 我也不知道標題要怎麽下，反正我就是隨筆寫寫，給我自己做個記錄，我還是會儘量寫得詳細，能幫到你的話，再好不過，看不慣、不想看的不送
+這些名詞應該是對岸來的，應該就是前幾年字幕組的時代出來的字吧
+硬字幕 硬字幕，又稱為“內嵌字幕“，簡單地說，就是把字幕寫(壓)到影片中，按照srt定義的timestamp與subtitle content，把字幕壓到video stream中的每一個frame(這邊觀念不知道有沒有錯)，總之，硬字幕是沒辦法關掉的，已經壓在每一幀裡面了，完全無法分離，也沒辦法更改字體、大小之類的，優點就是對於播放裝置、播放軟體毫無要求，只要能夠解碼對應的影片格式，字幕就能夠正常顯示
+軟字幕 軟字幕就被稱為”外掛字幕“，副檔名通常是.ass、.ssa、.sub，可以讓kodi自動抓進去內嵌，在播放程式支援的情況下，隨時可以調整字體、大小、顏色，也可以定義好之後封裝到影片裡面(mkv)，但就需要系統有對應的視訊解碼器、字元解碼器、渲染工具，不然就會有一堆莫名其妙的錯誤
+這邊也就是大概解釋一下，字幕其實分了兩種，今天寫的就是操作上面比較簡單的硬字幕吧
+說明 先說一下最基本的用法吧：
+root@ASUSPRO:~#tree ./ / ├── ABC.srt └── ABC.mp4 0 directories, 2 files 最簡單的用法，直接壓字幕，沒記錯的話default font size似乎是12
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt&amp;#34; 如果要另外修改字體大小為24
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt:force_style=&amp;#39;Fontsize=24&amp;#39;&amp;#34; 修改字體大小為24 &#43; 字體顏色為正藍色(0, 0, 255) ，這邊PrimaryColour一律以&amp;amp;H開頭&amp;amp;結尾，中間是16進制RGB色碼
+$ ffmpeg -i ABC.mp4 -vf &amp;quot;subtitles=ABC.srt:force_style=&#39;Fontsize=24,PrimaryColour=&amp;amp;H0000ff&amp;amp;&#39;&amp;quot; 其實這邊用到的force_style設定項，規範按照ASS的定義，有興趣的可以參考這裡
+這裡舉例另外一個是我最常用的使用情境，就是整季都載完了XD，然後要下命令壓整個資料夾的影片，在命名有一定的規則的情況下
+root@ASUSPRO:~#tree ./ / ├── XYZ_EP1(Subtitle).srt ├── XYZ_EP1.mp4 ├── XYZ_EP2(Subtitle).srt ├── XYZ_EP2.mp4 ├── XYZ_EP3(Subtitle).srt ├── XYZ_EP3.'>
+<meta property='og:url' content='https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/'>
+<meta property='og:site_name' content='EiC'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='ffmpeg' /><meta property='article:tag' content='字幕' /><meta property='article:tag' content='影視' /><meta property='article:tag' content='mp4' /><meta property='article:published_time' content='2020-08-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-08-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://i.loli.net/2020/08/13/qjLaxc4WithJk5C.png' />
+<meta name="twitter:title" content="使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)">
+<meta name="twitter:description" content="前言 最近又來亂玩了，基於之前弄的LineTV的影片解析，在LineTV上面弄某些劇下來的時候，會遇到影片字幕分離的情形，如果用的是KODI、emby或是一些能夠自動抓字幕檔串流平台，並且支援眾多編碼的話，那倒還好，基本上還不還有太大的影響，頂多就是預設字體太小，整體觀影感受不夠舒服罷了
+但若是用電腦，或是早個幾年出來的“半智慧“電視，就算能夠解析srt，編碼也不見得支援的夠多，電視的話，或許FHD(60FPS)&#43;解字幕&#43;嵌入已經超載，處理器跟不上，整個使用體驗爛到難以形容，這裡拖那裡卡的
+所以這次就研究了一下怎麽合併單檔，反正原檔也都留著，GoogleDrive沒限制就隨便塞，或是剛好需要給長輩看的劇，就順便把字體弄大一點壓進去。
+硬字幕、軟字幕 我也不知道標題要怎麽下，反正我就是隨筆寫寫，給我自己做個記錄，我還是會儘量寫得詳細，能幫到你的話，再好不過，看不慣、不想看的不送
+這些名詞應該是對岸來的，應該就是前幾年字幕組的時代出來的字吧
+硬字幕 硬字幕，又稱為“內嵌字幕“，簡單地說，就是把字幕寫(壓)到影片中，按照srt定義的timestamp與subtitle content，把字幕壓到video stream中的每一個frame(這邊觀念不知道有沒有錯)，總之，硬字幕是沒辦法關掉的，已經壓在每一幀裡面了，完全無法分離，也沒辦法更改字體、大小之類的，優點就是對於播放裝置、播放軟體毫無要求，只要能夠解碼對應的影片格式，字幕就能夠正常顯示
+軟字幕 軟字幕就被稱為”外掛字幕“，副檔名通常是.ass、.ssa、.sub，可以讓kodi自動抓進去內嵌，在播放程式支援的情況下，隨時可以調整字體、大小、顏色，也可以定義好之後封裝到影片裡面(mkv)，但就需要系統有對應的視訊解碼器、字元解碼器、渲染工具，不然就會有一堆莫名其妙的錯誤
+這邊也就是大概解釋一下，字幕其實分了兩種，今天寫的就是操作上面比較簡單的硬字幕吧
+說明 先說一下最基本的用法吧：
+root@ASUSPRO:~#tree ./ / ├── ABC.srt └── ABC.mp4 0 directories, 2 files 最簡單的用法，直接壓字幕，沒記錯的話default font size似乎是12
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt&amp;#34; 如果要另外修改字體大小為24
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt:force_style=&amp;#39;Fontsize=24&amp;#39;&amp;#34; 修改字體大小為24 &#43; 字體顏色為正藍色(0, 0, 255) ，這邊PrimaryColour一律以&amp;amp;H開頭&amp;amp;結尾，中間是16進制RGB色碼
+$ ffmpeg -i ABC.mp4 -vf &amp;quot;subtitles=ABC.srt:force_style=&#39;Fontsize=24,PrimaryColour=&amp;amp;H0000ff&amp;amp;&#39;&amp;quot; 其實這邊用到的force_style設定項，規範按照ASS的定義，有興趣的可以參考這裡
+這裡舉例另外一個是我最常用的使用情境，就是整季都載完了XD，然後要下命令壓整個資料夾的影片，在命名有一定的規則的情況下
+root@ASUSPRO:~#tree ./ / ├── XYZ_EP1(Subtitle).srt ├── XYZ_EP1.mp4 ├── XYZ_EP2(Subtitle).srt ├── XYZ_EP2.mp4 ├── XYZ_EP3(Subtitle).srt ├── XYZ_EP3."><meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content='https://i.loli.net/2020/08/13/qjLaxc4WithJk5C.png' /></head><body class="">
+        <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+
+                
+                    
+                    <img src="/img/cute-eic_hu572a16320c82c049ee51cec8a6f7d9a9_39068_300x300_resize_q75_box.jpg" width="300"
+                        height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+
+                <span class="emoji">🌠</span>
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">EiC</a></h1>
+        <h2 class="site-description">不瘋魔，不成活 — 霸王別姬</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='https://example.com/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://example.com/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://example.com/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+    </ol>
+</aside>
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            
+                <img src="https://i.loli.net/2020/08/13/qjLaxc4WithJk5C.png" loading="lazy" alt="Featured image of post 使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)" />
+            
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+                <a href="https://example.com/categories/ffmpeg/">ffmpeg</a>
+            
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/">使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 04, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="前言">前言</h2>
+<p>最近又來亂玩了，基於之前弄的<a class="link" href="https://github.com/liaojack8/LineTVParser"  target="_blank" rel="noopener"
+    >LineTV的影片解析</a>，在LineTV上面弄某些劇下來的時候，會遇到影片字幕分離的情形，如果用的是KODI、emby或是一些能夠自動抓字幕檔串流平台，並且支援眾多編碼的話，那倒還好，基本上還不還有太大的影響，頂多就是預設字體太小，整體觀影感受不夠舒服罷了</p>
+<p>但若是用電腦，或是早個幾年出來的“半智慧“電視，就算能夠解析srt，編碼也不見得支援的夠多，電視的話，或許FHD(60FPS)+解字幕+嵌入已經超載，處理器跟不上，整個使用體驗爛到難以形容，這裡拖那裡卡的</p>
+<p>所以這次就研究了一下怎麽合併單檔，反正原檔也都留著，<del>GoogleDrive沒限制就隨便塞</del>，或是剛好需要給長輩看的劇，就順便把字體弄大一點壓進去。</p>
+<h2 id="硬字幕軟字幕">硬字幕、軟字幕</h2>
+<p>我也不知道標題要怎麽下，反正我就是隨筆寫寫，給我自己做個記錄，我還是會儘量寫得詳細，能幫到你的話，再好不過，看不慣、不想看的不送</p>
+<p>這些名詞應該是對岸來的，應該就是前幾年字幕組的時代出來的字吧</p>
+<h3 id="硬字幕">硬字幕</h3>
+<p>硬字幕，又稱為“內嵌字幕“，簡單地說，就是把字幕寫(壓)到影片中，按照srt定義的timestamp與subtitle content，把字幕壓到video stream中的每一個frame(這邊觀念不知道有沒有錯)，總之，硬字幕是沒辦法關掉的，已經壓在每一幀裡面了，完全無法分離，也沒辦法更改字體、大小之類的，優點就是對於播放裝置、播放軟體毫無要求，只要能夠解碼對應的影片格式，字幕就能夠正常顯示</p>
+<h3 id="軟字幕">軟字幕</h3>
+<p>軟字幕就被稱為”外掛字幕“，副檔名通常是.ass、.ssa、.sub，可以讓kodi自動抓進去內嵌，在播放程式支援的情況下，隨時可以調整字體、大小、顏色，也可以定義好之後封裝到影片裡面(mkv)，但就需要系統有對應的視訊解碼器、字元解碼器、渲染工具，不然就會有一堆莫名其妙的錯誤</p>
+<p>這邊也就是大概解釋一下，字幕其實分了兩種，今天寫的就是操作上面比較簡單的硬字幕吧</p>
+<h2 id="說明">說明</h2>
+<p>先說一下最基本的用法吧：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@ASUSPRO:~#tree ./
+/
+├── ABC.srt
+└── ABC.mp4
+
+<span class="m">0</span> directories, <span class="m">2</span> files
+</code></pre></div><p>最簡單的用法，直接壓字幕，沒記錯的話default font size似乎是12</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ffmpeg -i ABC.mp4 -vf <span class="s2">&#34;subtitles=ABC.srt&#34;</span>
+</code></pre></div><p>如果要另外修改字體大小為24</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ffmpeg -i ABC.mp4 -vf <span class="s2">&#34;subtitles=ABC.srt:force_style=&#39;Fontsize=24&#39;&#34;</span>
+</code></pre></div><p>修改字體大小為24 + 字體顏色為正藍色(0, 0, 255) ，這邊PrimaryColour一律以<code>&amp;H</code>開頭<code>&amp;</code>結尾，中間是16進制RGB色碼</p>
+<pre><code>$ ffmpeg -i ABC.mp4 -vf &quot;subtitles=ABC.srt:force_style='Fontsize=24,PrimaryColour=&amp;H0000ff&amp;'&quot;
+</code></pre><p>其實這邊用到的<code>force_style</code>設定項，規範按照ASS的定義，有興趣的可以參考<a class="link" href="http://moodub.free.fr/video/ass-specs.doc"  target="_blank" rel="noopener"
+    >這裡</a></p>
+<p>這裡舉例另外一個是我最常用的使用情境，就是整季都載完了XD，然後要下命令壓整個資料夾的影片，在命名有一定的規則的情況下</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@ASUSPRO:~#tree ./
+/
+├── XYZ_EP1<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP1.mp4
+├── XYZ_EP2<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP2.mp4
+├── XYZ_EP3<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP3.mp4
+├── XYZ_EP4<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP4.mp4
+├── XYZ_EP5<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP5.mp4
+├── XYZ_EP6<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP6.mp4
+├── XYZ_EP7<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP7.mp4
+├── XYZ_EP8<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP8.mp4
+├── XYZ_EP9<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP9.mp4
+├── XYZ_EP10<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP10.mp4
+├── XYZ_EP11<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP11.mp4
+├── XYZ_EP12<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP12.mp4
+├── XYZ_EP13.mp4
+├── XYZ_EP13<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP14.mp4
+├── XYZ_EP14<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP15.mp4
+├── XYZ_EP15<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+├── XYZ_EP16.mp4
+└── XYZ_EP16<span class="o">(</span>Subtitle<span class="o">)</span>.srt
+
+<span class="m">0</span> directories, <span class="m">32</span> files
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="k">for</span> a in ./*.mp4<span class="p">;</span> <span class="k">do</span> ffmpeg -i <span class="s2">&#34;</span><span class="nv">$a</span><span class="s2">&#34;</span> -vf <span class="s2">&#34;subtitles=</span><span class="si">${</span><span class="nv">a</span><span class="p">%.mp4</span><span class="si">}</span><span class="s2">(Subtitle).srt:force_style=&#39;Fontsize=24&#39;&#34;</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">a</span><span class="p">%.mp4</span><span class="si">}</span><span class="s2">_cht.font24.mp4&#34;</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div><p>這樣下命令之後就可以丟著不用管了，他自己會壓完全部的檔案~~(燒CPU)~~，用ssh怕中斷的可以開個screen
+以上命令等價於下面這樣，至於為什麼就自己研究bash script去吧</p>
+<pre><code>XYZ_EP1.mp4 + XYZ_EP1(Subtitle).srt = XYZ_EP1_cht.font24.mp4
+...
+...
+...
+XYZ_EP16.mp4 + XYZ_EP16(Subtitle).srt = XYZ_EP16_cht.font24.mp4
+</code></pre><p>今天就說到這裡吧，之後有用到什麼新的可能會更新在這裡或是開個另一篇這樣。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="https://example.com/tags/ffmpeg/">ffmpeg</a>
+        
+            <a href="https://example.com/tags/%E5%AD%97%E5%B9%95/">字幕</a>
+        
+            <a href="https://example.com/tags/%E5%BD%B1%E8%A6%96/">影視</a>
+        
+            <a href="https://example.com/tags/mp4/">mp4</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="widget related-contents--wrapper">
+    
+    
+</aside>
+
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">&copy; 2020 EiC</section>
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="1.0.5">Stack</a></b> designed by
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="display:none">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<link rel="stylesheet" href="/css/highlight/light.min.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="/css/highlight/dark.min.css" media="(prefers-color-scheme: dark)">
+
+    </body>
+</html>

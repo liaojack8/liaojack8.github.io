@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacOS on EiC</title>
+    <link>https://example.com/categories/macos/</link>
+    <description>Recent content in MacOS on EiC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS使用homebrew基本教學</title>
+      <link>https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</guid>
+      <description>簡介 使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：brew install XXX，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。
+關於作者 先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD
+作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：max howell rejected by google 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。
+還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD
+Max的tweet原文 226. Invert Binary Tree - leetcode 我覺得知乎上還蠻有意思的討論串
+安裝 MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了
+$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; 這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code
+常用命令 安裝套件
+$ brew install xxx 安裝有GUI的套件
+$ brew cask install xxx 列出已安裝的套件
+$ brew list 推薦套件 wget &amp;mdash; 不用說，終端機上最好用的直鏈下載套件 xld &amp;mdash; flac音樂轉檔軟體 youtube-dl &amp;mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link ffmpeg &amp;mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的 zsh &amp;mdash; 不用說，讓terminal變漂亮、變更好用的套件 diskmaker-x &amp;mdash; 有時候需要刻錄安裝隨身碟 obs &amp;mdash; 現在應該沒有人不認識他吧 sublime-text &amp;mdash; 厲害的editor不解釋 node &amp;mdash; 就是node fuck &amp;mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ thefuck</description>
+    </item>
+    
+  </channel>
+</rss>

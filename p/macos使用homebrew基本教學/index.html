@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='簡介 使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：brew install XXX，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。
+關於作者 先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD
+作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：max howell rejected by google 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。
+還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD
+Max的tweet原文 226. Invert Binary Tree - leetcode 我覺得知乎上還蠻有意思的討論串
+安裝 MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了
+$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; 這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code
+常用命令 安裝套件
+$ brew install xxx 安裝有GUI的套件
+$ brew cask install xxx 列出已安裝的套件
+$ brew list 推薦套件 wget &amp;mdash; 不用說，終端機上最好用的直鏈下載套件 xld &amp;mdash; flac音樂轉檔軟體 youtube-dl &amp;mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link ffmpeg &amp;mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的 zsh &amp;mdash; 不用說，讓terminal變漂亮、變更好用的套件 diskmaker-x &amp;mdash; 有時候需要刻錄安裝隨身碟 obs &amp;mdash; 現在應該沒有人不認識他吧 sublime-text &amp;mdash; 厲害的editor不解釋 node &amp;mdash; 就是node fuck &amp;mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ thefuck'><title>MacOS使用homebrew基本教學</title>
+    
+    <link rel='canonical' href='https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='MacOS使用homebrew基本教學'>
+<meta property='og:description' content='簡介 使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：brew install XXX，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。
+關於作者 先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD
+作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：max howell rejected by google 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。
+還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD
+Max的tweet原文 226. Invert Binary Tree - leetcode 我覺得知乎上還蠻有意思的討論串
+安裝 MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了
+$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; 這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code
+常用命令 安裝套件
+$ brew install xxx 安裝有GUI的套件
+$ brew cask install xxx 列出已安裝的套件
+$ brew list 推薦套件 wget &amp;mdash; 不用說，終端機上最好用的直鏈下載套件 xld &amp;mdash; flac音樂轉檔軟體 youtube-dl &amp;mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link ffmpeg &amp;mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的 zsh &amp;mdash; 不用說，讓terminal變漂亮、變更好用的套件 diskmaker-x &amp;mdash; 有時候需要刻錄安裝隨身碟 obs &amp;mdash; 現在應該沒有人不認識他吧 sublime-text &amp;mdash; 厲害的editor不解釋 node &amp;mdash; 就是node fuck &amp;mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ thefuck'>
+<meta property='og:url' content='https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/'>
+<meta property='og:site_name' content='EiC'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='MacOS' /><meta property='article:tag' content='Terminal' /><meta property='article:published_time' content='2020-08-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-08-11T00:00:00&#43;00:00'/><meta property='og:image' content='https://i.loli.net/2020/08/12/D3Bdxlp7Qgfros1.png' />
+<meta name="twitter:title" content="MacOS使用homebrew基本教學">
+<meta name="twitter:description" content="簡介 使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：brew install XXX，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。
+關於作者 先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD
+作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：max howell rejected by google 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。
+還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD
+Max的tweet原文 226. Invert Binary Tree - leetcode 我覺得知乎上還蠻有意思的討論串
+安裝 MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了
+$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; 這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code
+常用命令 安裝套件
+$ brew install xxx 安裝有GUI的套件
+$ brew cask install xxx 列出已安裝的套件
+$ brew list 推薦套件 wget &amp;mdash; 不用說，終端機上最好用的直鏈下載套件 xld &amp;mdash; flac音樂轉檔軟體 youtube-dl &amp;mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link ffmpeg &amp;mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的 zsh &amp;mdash; 不用說，讓terminal變漂亮、變更好用的套件 diskmaker-x &amp;mdash; 有時候需要刻錄安裝隨身碟 obs &amp;mdash; 現在應該沒有人不認識他吧 sublime-text &amp;mdash; 厲害的editor不解釋 node &amp;mdash; 就是node fuck &amp;mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ thefuck"><meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content='https://i.loli.net/2020/08/12/D3Bdxlp7Qgfros1.png' /></head><body class="">
+        <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+
+                
+                    
+                    <img src="/img/cute-eic_hu572a16320c82c049ee51cec8a6f7d9a9_39068_300x300_resize_q75_box.jpg" width="300"
+                        height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+
+                <span class="emoji">🌠</span>
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">EiC</a></h1>
+        <h2 class="site-description">不瘋魔，不成活 — 霸王別姬</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='https://example.com/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://example.com/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://example.com/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+    </ol>
+</aside>
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            
+                <img src="https://i.loli.net/2020/08/12/D3Bdxlp7Qgfros1.png" loading="lazy" alt="Featured image of post MacOS使用homebrew基本教學" />
+            
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+                <a href="https://example.com/categories/macos/">MacOS</a>
+            
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/">MacOS使用homebrew基本教學</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 11, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="簡介">簡介</h2>
+<p>使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：<code>brew install XXX</code>，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。</p>
+<h2 id="關於作者">關於作者</h2>
+<p>先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD</p>
+<p>作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：<code>max howell rejected by google</code> 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。</p>
+<p>還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD</p>
+<p><a class="link" href="https://twitter.com/mxcl/status/608682016205344768"  target="_blank" rel="noopener"
+    >Max的tweet原文</a>
+<a class="link" href="https://leetcode.com/problems/invert-binary-tree/"  target="_blank" rel="noopener"
+    >226. Invert Binary Tree - leetcode</a>
+<a class="link" href="https://www.zhihu.com/question/31202353"  target="_blank" rel="noopener"
+    >我覺得知乎上還蠻有意思的討論串</a></p>
+<h2 id="安裝">安裝</h2>
+<p>MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ /bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</code></pre></div><p>這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code</p>
+<h2 id="常用命令">常用命令</h2>
+<p>安裝套件</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install xxx
+</code></pre></div><p>安裝有GUI的套件</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew cask install xxx
+</code></pre></div><p>列出已安裝的套件</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew list
+</code></pre></div><h2 id="推薦套件">推薦套件</h2>
+<p>wget &mdash; 不用說，終端機上最好用的直鏈下載套件
+xld &mdash; flac音樂轉檔軟體
+youtube-dl &mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link
+ffmpeg &mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的
+zsh &mdash; 不用說，讓terminal變漂亮、變更好用的套件
+diskmaker-x &mdash; 有時候需要刻錄安裝隨身碟
+obs &mdash; 現在應該沒有人不認識他吧
+sublime-text &mdash; 厲害的editor不解釋
+node &mdash; 就是node
+fuck &mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ <a class="link" href="https://github.com/nvbn/thefuck"  target="_blank" rel="noopener"
+    >thefuck</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="https://example.com/tags/macos/">MacOS</a>
+        
+            <a href="https://example.com/tags/terminal/">Terminal</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="widget related-contents--wrapper">
+    
+    
+</aside>
+
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">&copy; 2020 EiC</section>
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="1.0.5">Stack</a></b> designed by
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="display:none">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<link rel="stylesheet" href="/css/highlight/light.min.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="/css/highlight/dark.min.css" media="(prefers-color-scheme: dark)">
+
+    </body>
+</html>

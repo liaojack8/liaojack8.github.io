@@ -1,62 +1,117 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Example Site</title>
-    <link>https://liaojack8.github.io/post/</link>
-    <description>Recent content in Posts on Example Site</description>
+    <title>Posts on EiC</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on EiC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://liaojack8.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chinese Test</title>
-      <link>https://liaojack8.github.io/p/test-chinese/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      <title>更換域名、SSL證書，並使用cloudflare導流</title>
+      <link>https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/p/test-chinese/</guid>
-      <description>正文测试 而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。
-奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。
-引用  思念是最暖的忧伤像一双翅膀
-让我停不了飞不远在过往游荡
-不告而别的你 就算为了我着想
-这么沉痛的呵护 我怎么能翱翔
-最暖的憂傷 - 田馥甄
- 图片   Photo by Florian Klauer on Unsplash    Photo by Luca Bravo on Unsplash</description>
+      <guid>https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/</guid>
+      <description>會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。
+因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain+ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。
+那就&amp;hellip;開始吧！ 首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的
+server { listen 80; server_name example.domain.com; return 301 https://$host$request_uri; } server { listen 443 ssl; ssl on; ssl_certificate /etc/ssl/certificate.crt; ssl_certificate_key /etc/ssl/private.key; server_name example.domain.com; location / { proxy_pass http://127.0.0.1:35578/; } } 因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的example.domain.com，接著申請ssl certificate，並放到conf中所設定的對應路徑/etc/ssl/certificate.crt、/etc/ssl/private.key
+購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以eic.com舉例來申請ZeroSSL的證書，登入後直接到這裡申請即可
+比較重要的部分是驗證域名的時候Verify Domain，會有Email Verification、DNS (CNAME)和HTTP File Upload三個選項
+一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&amp;hellip;
+大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到ca_bundle.crt、certificate.crt、private.key三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯
+nginx: [emerg] PEM_read_bio_X509_AUX (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line) 來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：
+$ echo &amp;#34;&amp;#34; &amp;gt;&amp;gt; certificate.</description>
     </item>
     
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://liaojack8.github.io/p/markdown-syntax-guide/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>箴言(?)集</title>
+      <link>https://example.com/p/%E7%AE%B4%E8%A8%80%E9%9B%86/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/p/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <guid>https://example.com/p/%E7%AE%B4%E8%A8%80%E9%9B%86/</guid>
+      <description>純粹分享一些我看到、聽到、想到的話 這些話，沒有一句是對的，但也沒有一句是錯的 你也許可以在任何情況下，用這些話為自己開脫、給自己安慰，相對也能推著自己向前進 這些話並沒有特別不一樣，與所有事物無異，他有著正反兩面，端看你怎麼用他 如果你看著這些話，全然是激勵亦或全然是安慰，那也許，你看待這世界的眼光，還是太淺了
+  世界從來都不公平 你有多努力就有多特殊
+  擁有的都是僥倖，失敗的才是人生
+  你這一生要努力的，就是活成自己喜歡的樣子
+  對待生命，你不妨大膽冒險一點，因為好歹你要失去他 ── 尼采
+  It was harsh, but it was brilliant.
+  Sometimes rules are made to be broken.
+  </description>
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://liaojack8.github.io/p/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>我的人生態度</title>
+      <link>https://example.com/p/%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E6%85%8B%E5%BA%A6/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/p/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      <guid>https://example.com/p/%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E6%85%8B%E5%BA%A6/</guid>
+      <description>不要害怕逃避 不要去理會別人是怎麼說的，只有你最懂你自己，你只要相信自己作出的決定是對自己最好的就好，適當的承受壓力、面對挑戰，那是歷練，那是讓你能力變得更強大的途徑之一。 我們總得承認，人生本就沒有事事如意，也許你是應該逆來順受，但你也應該了解自己能夠承受的界限，學會適時的喊停，因爲只有你最懂你自己，逃避未必就等價於懦弱，許多你認為強悍的所有，其實可能沒有想的強悍，甚至可能是脆弱的，在一些情況之下，逃避，或許是這道題的最佳解。
+嘗試瞭解每一個領域 你可以只鑽研一個特定的領域，但你得保證你能夠成為那個領域、行業之中的佼佼者，這樣你才能坐擁不容易被取代的位置，其實這個世界，就像是一棵二元樹，資源是定量的，由上而下的資源只會越來越少，你要是不努力讓自己往上爬，那你永遠就只能享有那樣的資源，同時得面臨在上位者的打壓或是新世代的取代，也許你的生活會有很大的機率不會那麼的愉快。
+你應該做的，是把握任何的機會去認識每一個你不熟悉的領域，你不需要特別做什麼，只需要盡你所能的瞭解，將其當作是你的背景知識。我不會跟你說的太多，因為我想的也可能是錯的。如果你覺得我說的毫無道理，那你不要聽進去，不要照做就是了。
+沒有人知道未來的模樣是什麼輪廓。有人總說著AI新世代來臨，會導致某某行業人力需求大減&amp;hellip;&amp;hellip;。我們先不去討論這是不是在杞人憂天，假設這是真的，也許你可以因此很快速的轉換領域，避免被世代更迭淘汰掉，也許你跨領域的能力，沒辦法被AI取代。那如果他是假的呢？你也不會因此白做工，可能在未來的某一天，你看到了異業結合的可能性，他可以成為商機，你會因為你的背景知識，無意間發現這個領域的市場及需求，很適合進場分一杯羹、小賺一筆，當然，順利的話，你也可能因此搭上潮流，一夕致富。總之，這樣做並不會讓你吃虧，你甚至可能因此得到助益、擁有更多。
+維持生活節奏 沒有人不按照習慣做事的，人體由大到小甚至連細胞，也是依循著慣性工作的，你應該維持好一定的生活節奏，即便你的生活被工作佔據，也許索然無味，甚至可能壓力大得讓你覺得每天都很疲憊，但維持好一個節奏，你的身體也會能夠適應這樣的生活，你依舊有辦法保持舒服的心情去面對每一天的挑戰。
+人體也會需要你保持一定的生活節奏、習慣，只要你有適度的休息，平常的高壓、疲勞，也是可以被身體調節好的，才不會常常身體不舒服。不要讓任何事情拉走你的生活節奏，要是身不由己，也不該讓他一去不復返，畢竟這跟你的健康有關。
+決定人生態度 塑造你的行事風格、個性，決定你處理事情、看待事情的一貫風格，即便你未經世事，至少，你會顯得足夠的成熟穩重。嘴巴長在別人身上，你當然無法控制別人對你的說法，但凡事的評論，都是可以“養”出來的，久而久之，別人會認為你就是這個樣子的，認同你的自然會認同你，不認同的你也不用管他去哪裡了。對別人們來說，你有了一定的關聯性，你建立的連結，可以有一定的程度綁住他們的思維，你會得到你應該得到的尊重，因為你現在對他們來說是個咖了。
+不過，衝動、沉不住氣、做事不經思考、不懂得深思熟慮，這些不叫做個性，也不是什麼態度風格，你可以說你就是這樣的人，反正我無所謂，我就說到這。</description>
     </item>
     
     <item>
-      <title>Math Typesetting</title>
-      <link>https://liaojack8.github.io/p/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <title>MacOS使用homebrew基本教學</title>
+      <link>https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/p/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+      <guid>https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</guid>
+      <description>簡介 使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：brew install XXX，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。
+關於作者 先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD
+作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：max howell rejected by google 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。
+還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD
+Max的tweet原文 226. Invert Binary Tree - leetcode 我覺得知乎上還蠻有意思的討論串
+安裝 MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了
+$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; 這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code
+常用命令 安裝套件
+$ brew install xxx 安裝有GUI的套件
+$ brew cask install xxx 列出已安裝的套件
+$ brew list 推薦套件 wget &amp;mdash; 不用說，終端機上最好用的直鏈下載套件 xld &amp;mdash; flac音樂轉檔軟體 youtube-dl &amp;mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link ffmpeg &amp;mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的 zsh &amp;mdash; 不用說，讓terminal變漂亮、變更好用的套件 diskmaker-x &amp;mdash; 有時候需要刻錄安裝隨身碟 obs &amp;mdash; 現在應該沒有人不認識他吧 sublime-text &amp;mdash; 厲害的editor不解釋 node &amp;mdash; 就是node fuck &amp;mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ thefuck</description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>https://liaojack8.github.io/p/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)</title>
+      <link>https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/p/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <guid>https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/</guid>
+      <description>前言 最近又來亂玩了，基於之前弄的LineTV的影片解析，在LineTV上面弄某些劇下來的時候，會遇到影片字幕分離的情形，如果用的是KODI、emby或是一些能夠自動抓字幕檔串流平台，並且支援眾多編碼的話，那倒還好，基本上還不還有太大的影響，頂多就是預設字體太小，整體觀影感受不夠舒服罷了
+但若是用電腦，或是早個幾年出來的“半智慧“電視，就算能夠解析srt，編碼也不見得支援的夠多，電視的話，或許FHD(60FPS)+解字幕+嵌入已經超載，處理器跟不上，整個使用體驗爛到難以形容，這裡拖那裡卡的
+所以這次就研究了一下怎麽合併單檔，反正原檔也都留著，GoogleDrive沒限制就隨便塞，或是剛好需要給長輩看的劇，就順便把字體弄大一點壓進去。
+硬字幕、軟字幕 我也不知道標題要怎麽下，反正我就是隨筆寫寫，給我自己做個記錄，我還是會儘量寫得詳細，能幫到你的話，再好不過，看不慣、不想看的不送
+這些名詞應該是對岸來的，應該就是前幾年字幕組的時代出來的字吧
+硬字幕 硬字幕，又稱為“內嵌字幕“，簡單地說，就是把字幕寫(壓)到影片中，按照srt定義的timestamp與subtitle content，把字幕壓到video stream中的每一個frame(這邊觀念不知道有沒有錯)，總之，硬字幕是沒辦法關掉的，已經壓在每一幀裡面了，完全無法分離，也沒辦法更改字體、大小之類的，優點就是對於播放裝置、播放軟體毫無要求，只要能夠解碼對應的影片格式，字幕就能夠正常顯示
+軟字幕 軟字幕就被稱為”外掛字幕“，副檔名通常是.ass、.ssa、.sub，可以讓kodi自動抓進去內嵌，在播放程式支援的情況下，隨時可以調整字體、大小、顏色，也可以定義好之後封裝到影片裡面(mkv)，但就需要系統有對應的視訊解碼器、字元解碼器、渲染工具，不然就會有一堆莫名其妙的錯誤
+這邊也就是大概解釋一下，字幕其實分了兩種，今天寫的就是操作上面比較簡單的硬字幕吧
+說明 先說一下最基本的用法吧：
+root@ASUSPRO:~#tree ./ / ├── ABC.srt └── ABC.mp4 0 directories, 2 files 最簡單的用法，直接壓字幕，沒記錯的話default font size似乎是12
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt&amp;#34; 如果要另外修改字體大小為24
+$ ffmpeg -i ABC.mp4 -vf &amp;#34;subtitles=ABC.srt:force_style=&amp;#39;Fontsize=24&amp;#39;&amp;#34; 修改字體大小為24 + 字體顏色為正藍色(0, 0, 255) ，這邊PrimaryColour一律以&amp;amp;H開頭&amp;amp;結尾，中間是16進制RGB色碼
+$ ffmpeg -i ABC.mp4 -vf &amp;quot;subtitles=ABC.srt:force_style=&#39;Fontsize=24,PrimaryColour=&amp;amp;H0000ff&amp;amp;&#39;&amp;quot; 其實這邊用到的force_style設定項，規範按照ASS的定義，有興趣的可以參考這裡
+這裡舉例另外一個是我最常用的使用情境，就是整季都載完了XD，然後要下命令壓整個資料夾的影片，在命名有一定的規則的情況下
+root@ASUSPRO:~#tree ./ / ├── XYZ_EP1(Subtitle).srt ├── XYZ_EP1.mp4 ├── XYZ_EP2(Subtitle).srt ├── XYZ_EP2.mp4 ├── XYZ_EP3(Subtitle).srt ├── XYZ_EP3.</description>
+    </item>
+    
+    <item>
+      <title>如何為MongoDB加上使用者權限控制</title>
+      <link>https://example.com/p/%E5%A6%82%E4%BD%95%E7%82%BAmongodb%E5%8A%A0%E4%B8%8A%E4%BD%BF%E7%94%A8%E8%80%85%E6%AC%8A%E9%99%90%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/%E5%A6%82%E4%BD%95%E7%82%BAmongodb%E5%8A%A0%E4%B8%8A%E4%BD%BF%E7%94%A8%E8%80%85%E6%AC%8A%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
+      <description>前言 時隔半年，最近又回來用了MongoDB，之前只是裝來玩玩，其實也沒幹嘛
+這裡先推薦一下MongoDB Compass Community，正式釋出了，現在已經趨於穩定，使用上功能也很齊全
+最近好像安裝的時候就會問你要不要一起裝Community，有GUI的工具可以輔助開發實在是太方便的一件事
+這次需要讓主機對外，讓資料庫可以被遠端連接，記錄一下操作流程
+操作步驟 先選擇使用admin資料庫
+$ mongo &amp;gt; use admin 這裡放上我自己整理的表格，可以參考其設定使用者權限
+ 使用者(用戶)說明(基於MongoDB v4.2 Manual)     角色 權限說明     &amp;mdash;資料庫使用者&amp;mdash; &amp;mdash;   Read 允許該使用者讀取指定資料庫   readWrite 允許該使用者讀寫指定資料庫   &amp;mdash;資料庫管理者&amp;mdash; &amp;mdash;   dbAdmin 允許該使用者在指定資料庫中執行管理函數 例如索引編制、收集統計資訊   dbOwner 資料庫的擁有者，可以對資料庫執行任何管理操作 = readWrite + dbAdmin + userAdmin   userAdmin 允許該使用者對其他使用者進行權限管控，可對users集群寫入 對指定的資料庫新增/刪除使用者   &amp;mdash;叢集(集群)管理者&amp;mdash; &amp;mdash; (這裡我就不太熟悉了)   clusterAdmin 賦予最大的集群管理權限，也可dropDatabase = clusterManager + clusterMonitor + hostManager   clusterManager 賦予權限可對集群進行管理和監視   &amp;mdash;所有資料庫使用者&amp;mdash; &amp;mdash;   readAnyDatabase 賦予使用者所有資料庫(local和config除外)的讀取權限 同時也能對整個集群進行listDatabases操作   readWriteAnyDatabase 賦予使用者所有資料庫(local和config除外)的讀寫權限 同時也能對整個集群進行listDatabases操作   userAdminAnyDatabase 賦予使用者所有資料庫(local和config除外)的userAdmin權限 同時也能對整個集群進行以下幾種操作: authSchemaUpgrade invalidateUserCache listDatabases   dbAdminAnyDatabase 賦予使用者所有資料庫(local和config除外)的dbAdmin權限 同時也能對整個集群進行listDatabases操作   &amp;mdash;超級使用者&amp;mdash; &amp;mdash;   root 超級帳號，無權限限制。具體可使用的操作如下: readWriteAnyDatabasedbAdminAnyDatabaseuserAdminAnyDatabaseclusterAdminrestorebackup    繼use admin後，接著就直接建立使用者，語法格式如下，這裡寫上兩個常用範例</description>
     </item>
     
   </channel>

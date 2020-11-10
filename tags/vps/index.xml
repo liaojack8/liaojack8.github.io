@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vps on EiC</title>
+    <link>https://example.com/tags/vps/</link>
+    <description>Recent content in vps on EiC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更換域名、SSL證書，並使用cloudflare導流</title>
+      <link>https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/</guid>
+      <description>會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。
+因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain+ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。
+那就&amp;hellip;開始吧！ 首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的
+server { listen 80; server_name example.domain.com; return 301 https://$host$request_uri; } server { listen 443 ssl; ssl on; ssl_certificate /etc/ssl/certificate.crt; ssl_certificate_key /etc/ssl/private.key; server_name example.domain.com; location / { proxy_pass http://127.0.0.1:35578/; } } 因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的example.domain.com，接著申請ssl certificate，並放到conf中所設定的對應路徑/etc/ssl/certificate.crt、/etc/ssl/private.key
+購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以eic.com舉例來申請ZeroSSL的證書，登入後直接到這裡申請即可
+比較重要的部分是驗證域名的時候Verify Domain，會有Email Verification、DNS (CNAME)和HTTP File Upload三個選項
+一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&amp;hellip;
+大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到ca_bundle.crt、certificate.crt、private.key三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯
+nginx: [emerg] PEM_read_bio_X509_AUX (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line) 來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：
+$ echo &amp;#34;&amp;#34; &amp;gt;&amp;gt; certificate.</description>
+    </item>
+    
+  </channel>
+</rss>

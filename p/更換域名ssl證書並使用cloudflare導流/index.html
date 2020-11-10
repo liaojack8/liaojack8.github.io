@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。
+因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain&#43;ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。
+那就&amp;hellip;開始吧！ 首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的
+server { listen 80; server_name example.domain.com; return 301 https://$host$request_uri; } server { listen 443 ssl; ssl on; ssl_certificate /etc/ssl/certificate.crt; ssl_certificate_key /etc/ssl/private.key; server_name example.domain.com; location / { proxy_pass http://127.0.0.1:35578/; } } 因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的example.domain.com，接著申請ssl certificate，並放到conf中所設定的對應路徑/etc/ssl/certificate.crt、/etc/ssl/private.key
+購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以eic.com舉例來申請ZeroSSL的證書，登入後直接到這裡申請即可
+比較重要的部分是驗證域名的時候Verify Domain，會有Email Verification、DNS (CNAME)和HTTP File Upload三個選項
+一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&amp;hellip;
+大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到ca_bundle.crt、certificate.crt、private.key三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯
+nginx: [emerg] PEM_read_bio_X509_AUX (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line) 來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：
+$ echo &amp;#34;&amp;#34; &amp;gt;&amp;gt; certificate.'><title>更換域名、SSL證書，並使用cloudflare導流</title>
+    
+    <link rel='canonical' href='https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='更換域名、SSL證書，並使用cloudflare導流'>
+<meta property='og:description' content='會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。
+因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain&#43;ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。
+那就&amp;hellip;開始吧！ 首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的
+server { listen 80; server_name example.domain.com; return 301 https://$host$request_uri; } server { listen 443 ssl; ssl on; ssl_certificate /etc/ssl/certificate.crt; ssl_certificate_key /etc/ssl/private.key; server_name example.domain.com; location / { proxy_pass http://127.0.0.1:35578/; } } 因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的example.domain.com，接著申請ssl certificate，並放到conf中所設定的對應路徑/etc/ssl/certificate.crt、/etc/ssl/private.key
+購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以eic.com舉例來申請ZeroSSL的證書，登入後直接到這裡申請即可
+比較重要的部分是驗證域名的時候Verify Domain，會有Email Verification、DNS (CNAME)和HTTP File Upload三個選項
+一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&amp;hellip;
+大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到ca_bundle.crt、certificate.crt、private.key三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯
+nginx: [emerg] PEM_read_bio_X509_AUX (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line) 來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：
+$ echo &amp;#34;&amp;#34; &amp;gt;&amp;gt; certificate.'>
+<meta property='og:url' content='https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/'>
+<meta property='og:site_name' content='EiC'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='domain name' /><meta property='article:tag' content='server' /><meta property='article:tag' content='vps' /><meta property='article:tag' content='cloudflare' /><meta property='article:tag' content='ssl' /><meta property='article:published_time' content='2020-08-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-08-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://i.loli.net/2020/08/30/WultGPwkIOjNSYs.png' />
+<meta name="twitter:title" content="更換域名、SSL證書，並使用cloudflare導流">
+<meta name="twitter:description" content="會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。
+因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain&#43;ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。
+那就&amp;hellip;開始吧！ 首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的
+server { listen 80; server_name example.domain.com; return 301 https://$host$request_uri; } server { listen 443 ssl; ssl on; ssl_certificate /etc/ssl/certificate.crt; ssl_certificate_key /etc/ssl/private.key; server_name example.domain.com; location / { proxy_pass http://127.0.0.1:35578/; } } 因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的example.domain.com，接著申請ssl certificate，並放到conf中所設定的對應路徑/etc/ssl/certificate.crt、/etc/ssl/private.key
+購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以eic.com舉例來申請ZeroSSL的證書，登入後直接到這裡申請即可
+比較重要的部分是驗證域名的時候Verify Domain，會有Email Verification、DNS (CNAME)和HTTP File Upload三個選項
+一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&amp;hellip;
+大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到ca_bundle.crt、certificate.crt、private.key三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯
+nginx: [emerg] PEM_read_bio_X509_AUX (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line) 來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：
+$ echo &amp;#34;&amp;#34; &amp;gt;&amp;gt; certificate."><meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content='https://i.loli.net/2020/08/30/WultGPwkIOjNSYs.png' /></head><body class="">
+        <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+
+                
+                    
+                    <img src="/img/cute-eic_hu572a16320c82c049ee51cec8a6f7d9a9_39068_300x300_resize_q75_box.jpg" width="300"
+                        height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+
+                <span class="emoji">🌠</span>
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">EiC</a></h1>
+        <h2 class="site-description">不瘋魔，不成活 — 霸王別姬</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='https://example.com/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://example.com/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://example.com/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+    </ol>
+</aside>
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            
+                <img src="https://i.loli.net/2020/08/30/WultGPwkIOjNSYs.png" loading="lazy" alt="Featured image of post 更換域名、SSL證書，並使用cloudflare導流" />
+            
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+                <a href="https://example.com/categories/server/">Server</a>
+            
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/">更換域名、SSL證書，並使用cloudflare導流</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Aug 30, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。</p>
+<p><img src="https://i.loli.net/2020/08/30/NvgD4L3YIO7ohbx.png" alt=""  /></p>
+<p>因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain+ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。</p>
+<p>那就&hellip;開始吧！
+首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的</p>
+<pre><code class="language-nginx-conf" data-lang="nginx-conf">server {
+    listen 80;
+    server_name example.domain.com;
+    return 301 https://$host$request_uri;
+}
+server {
+    listen 443 ssl;
+    ssl on;
+    ssl_certificate    /etc/ssl/certificate.crt;
+    ssl_certificate_key    /etc/ssl/private.key;
+    server_name example.domain.com;
+    location / {
+         proxy_pass http://127.0.0.1:35578/;
+    }
+}
+</code></pre><p>因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的<code>example.domain.com</code>，接著申請ssl certificate，並放到conf中所設定的對應路徑<code>/etc/ssl/certificate.crt</code>、<code>/etc/ssl/private.key</code></p>
+<p>購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以<code>eic.com</code>舉例來申請ZeroSSL的證書，登入後直接到<a class="link" href="https://app.zerossl.com/certificate/new"  target="_blank" rel="noopener"
+    >這裡</a>申請即可</p>
+<p><img src="https://i.loli.net/2020/08/30/wCGuWitElJzTBdS.png" alt=""  /></p>
+<p>比較重要的部分是驗證域名的時候<code>Verify Domain</code>，會有<code>Email Verification</code>、<code>DNS (CNAME)</code>和<code>HTTP File Upload</code>三個選項</p>
+<p><img src="https://i.loli.net/2020/08/30/WcUBYbJZhnVkQs2.png" alt=""  /></p>
+<p>一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&hellip;</p>
+<p><img src="https://i.loli.net/2020/08/30/gasv3LyM8PBDXbm.png" alt=""  /></p>
+<p>大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到<code>ca_bundle.crt</code>、<code>certificate.crt</code>、<code>private.key</code>三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nginx: <span class="o">[</span>emerg<span class="o">]</span> PEM_read_bio_X509_AUX
+<span class="o">(</span>SSL: error:0908F066:PEM routines:get_header_and_data:bad end line<span class="o">)</span>
+</code></pre></div><p>來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;&#34;</span> &gt;&gt; certificate.crt <span class="o">&amp;&amp;</span> cat certificate.crt ca_bundle.crt &gt; certificate-all.crt
+</code></pre></div><p>而這個輸出的<code>certificate-all.crt</code>就對應到nginx-conf中的<code>ssl_certificate</code>項，接著把格式正確的金鑰複製到對應路徑<code>cp ./certificate-all.crt /etc/ssl/certificate.crt</code></p>
+<p>完成之後，以<code>sudo service nginx restart</code>重啓nginx服務就大功告成啦！</p>
+<p>究其原因，其實就是nginx所需的<code>ssl_certificate</code>是ZeroSSL所生成的<code>certificate.crt + ca_bundle.crt</code>，究竟是什麼格式我也懶得去釐清了，有空再來了解XD，而如果直接進行合併的話，會因為兩個crt之間沒有換行，合併完之後會造成下面這樣的窘況</p>
+<pre><code class="language-crt-content" data-lang="crt-content">-----BEGIN CERTIFICATE-----
+certificate-content
+-----END CERTIFICATE----------BEGIN CERTIFICATE-----
+ca_bundle-content
+-----END CERTIFICATE-----
+</code></pre><p>因此先做<code>echo &quot;&quot; &gt;&gt; certificate.crt</code>，讓<code>certificate.crt</code>在內文末端加上一個換行，再進行合併，即可解決這個問題</p>
+<p>既然有了新的二級域名，那就順便加上cloudflare導流加速一下吧，因爲原本在<code>nctu.me</code>申請的域名<code>eic.nctu.me</code>算是<code>nctu.me</code>的sub domain，我只能算是三級域的擁有者，而cloudflare並不接受三級域的申請，所以之前無法使用，之前還沒有玩過，來玩一下吧</p>
+<p>到cloudflare註冊好帳號，填入擁有的域名之後，他就會去抓已存在的DNS Record，你可以調整你要讓cf代理的流量是哪幾個網址，這邊要注意的是cf只代理http(s)流量，所以如果你需要用某個網址當作SSH、FTP、Telnet的連線入口，要記得在對應的網址設上<code>僅DNS</code> (如下圖中灰色的雲)</p>
+<p><img src="https://i.loli.net/2020/08/30/vUENexa6gByXzi1.png" alt=""  /></p>
+<p>這邊設定完成之後，cf就會給你兩個DNS Server Address，讓你去Domain Name的管理頁面去替換掉原本服務提供商預設的，藉此把流量導到cf自己的DNS Server去解析，以達到導流、加速的功能
+設定完成後，回到cf的頁面按下檢查，去喝杯咖啡，等cf驗證通過之後會發email給你，這時就代表cf的設定是正確的而且有通啦～</p>
+<p>最後最後，拉回本文的主要目標，是要重新設定這台與tg bot綁定的vps，由於網域也換新的了，Webhook也要重新設定，這邊如果你沒有記在其他地方的話，就要去BotFather那裡拿該bot的token，我拿到的是<code>1314505384:TT3dRx6MHgQAFEGw8fna3vrPxw44BuwCRkj</code>，域名是<code>eic.com</code>，因此敲敲下面這個命令</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -F <span class="s2">&#34;url=https://eic.com/api/homeBot/tgbot&#34;</span> <span class="s2">&#34;https://api.telegram.org/bot1314505384:TT3dRx6MHgQAFEGw8fna3vrPxw44BuwCRkj/setWebhook&#34;</span>
+</code></pre></div><p>如果你得到的回應是:<code>{&quot;ok&quot;:false,&quot;error_code&quot;:401,&quot;description&quot;:&quot;Unauthorized&quot;}</code>，那請檢查token是不是拿錯了，以及<code>https://api.telegram.org/bot</code>與token之間是沒有任何符號或是空白的喔！
+而正確的話，會得到以下回應：<code>{&quot;ok&quot;:true,&quot;result&quot;:true,&quot;description&quot;:&quot;Webhook is already set&quot;}</code>，表示Webhook已經完成設定</p>
+<p>好累&hellip;一邊設定一邊寫這篇文章，不說了，我要去檢查其他跟nctu free domain name有關的服務了&hellip;&hellip;</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="https://example.com/tags/domain-name/">domain name</a>
+        
+            <a href="https://example.com/tags/server/">server</a>
+        
+            <a href="https://example.com/tags/vps/">vps</a>
+        
+            <a href="https://example.com/tags/cloudflare/">cloudflare</a>
+        
+            <a href="https://example.com/tags/ssl/">ssl</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="widget related-contents--wrapper">
+    
+    
+</aside>
+
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">&copy; 2020 EiC</section>
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="1.0.5">Stack</a></b> designed by
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="display:none">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<link rel="stylesheet" href="/css/highlight/light.min.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="/css/highlight/dark.min.css" media="(prefers-color-scheme: dark)">
+
+    </body>
+</html>

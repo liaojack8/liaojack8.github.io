@@ -1,305 +1,385 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Example Site</title>
-        <link>https://liaojack8.github.io/</link>
-        <description>Recent content on Example Site</description>
+        <title>EiC</title>
+        <link>https://example.com/</link>
+        <description>Recent content on EiC</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://liaojack8.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Chinese Test</title>
-        <link>https://liaojack8.github.io/p/test-chinese/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>更換域名、SSL證書，並使用cloudflare導流</title>
+        <link>https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/</link>
+        <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://liaojack8.github.io/p/test-chinese/</guid>
-        <description>&lt;img src="https://liaojack8.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
-&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
-&lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
-&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;思念是最暖的忧伤像一双翅膀&lt;br&gt;
-让我停不了飞不远在过往游荡&lt;br&gt;
-不告而别的你 就算为了我着想&lt;br&gt;
-这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
-&lt;p&gt;&lt;figure&gt;
-		&lt;a href=&#34;https://liaojack8.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
-			&lt;img srcset=&#34;https://liaojack8.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://liaojack8.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
-				src=&#34;https://liaojack8.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; width=&#34;667&#34; height=&#34;1000&#34; loading=&#34;lazy&#34;
-				alt=&#34;Photo by Florian Klauer on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Florian Klauer on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;  &lt;figure&gt;
-		&lt;a href=&#34;https://liaojack8.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;
-			&lt;img srcset=&#34;https://liaojack8.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://liaojack8.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
-				src=&#34;https://liaojack8.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; width=&#34;1000&#34; height=&#34;667&#34; loading=&#34;lazy&#34;
-				alt=&#34;Photo by Luca Bravo on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Luca Bravo on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;
-		&lt;a href=&#34;https://liaojack8.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;
-			&lt;img srcset=&#34;https://liaojack8.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://liaojack8.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
-				src=&#34;https://liaojack8.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; width=&#34;1000&#34; height=&#34;750&#34; loading=&#34;lazy&#34;
-				alt=&#34;Photo by Helena Hertz on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Helena Hertz on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;  &lt;figure&gt;
-		&lt;a href=&#34;https://liaojack8.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
-			&lt;img srcset=&#34;https://liaojack8.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://liaojack8.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
-				src=&#34;https://liaojack8.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; width=&#34;667&#34; height=&#34;1000&#34; loading=&#34;lazy&#34;
-				alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Hudai Gayiran on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Florian Klauer on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;florian-klauer-nptLmg6jqDo-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Luca Bravo on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;luca-bravo-alS7ewQ41M8-unsplash.jpg&lt;/span&gt;) 
-
-![&lt;span class=&#34;nt&#34;&gt;Photo by Helena Hertz on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;helena-hertz-wWZzXlDpMog-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Hudai Gayiran on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Typlog&lt;/a&gt;&lt;/p&gt;
+        <guid>https://example.com/p/%E6%9B%B4%E6%8F%9B%E5%9F%9F%E5%90%8Dssl%E8%AD%89%E6%9B%B8%E4%B8%A6%E4%BD%BF%E7%94%A8cloudflare%E5%B0%8E%E6%B5%81/</guid>
+        <description>&lt;img src="https://i.loli.net/2020/08/30/WultGPwkIOjNSYs.png" alt="Featured image of post 更換域名、SSL證書，並使用cloudflare導流" /&gt;&lt;p&gt;會想要寫這篇文章，主要是看到了下面這則NCTU Domain在約莫10天前在官方粉專發文表示要終止服務，其實我並不是太意外，畢竟這樣的免費服務，在沒有身份認證實名制又被濫用的情況下，除非是大型企業機構，否則維持營運是很勞心費力的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/30/NvgD4L3YIO7ohbx.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;因為自己有架一台便宜vps串了telegram bot做一個簡易的服務機器人，由於使用的是Webhook協定，需要一個domain name而且服務要走https協定出去，不然沒辦法綁定，所以原先的設定就是使用NCTU Domain+ZeroSSL。然而NCTU Domain這個服務要關掉了，雖然現在他的DNS server還可以依照之前設定的record運作，但依照貼文的內容，9/30就會連同DNS Record也都終止掉了，於是今天這篇文章就但誕生了，在原有的設定組態之下，設定新的域名、SSL certificate、並與tg bot綁定Webhook。&lt;/p&gt;
+&lt;p&gt;那就&amp;hellip;開始吧！
+首先提及一下，我在vps上面是起了一個用python所寫的服務 (port 35578)，並用nginx做反向代理與強制轉跳https，所以我的conf是這樣寫的&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nginx-conf&#34; data-lang=&#34;nginx-conf&#34;&gt;server {
+    listen 80;
+    server_name example.domain.com;
+    return 301 https://$host$request_uri;
+}
+server {
+    listen 443 ssl;
+    ssl on;
+    ssl_certificate    /etc/ssl/certificate.crt;
+    ssl_certificate_key    /etc/ssl/private.key;
+    server_name example.domain.com;
+    location / {
+         proxy_pass http://127.0.0.1:35578/;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因此，對我而言，首先要做的就是購買domain name，然後替換掉conf中的&lt;code&gt;example.domain.com&lt;/code&gt;，接著申請ssl certificate，並放到conf中所設定的對應路徑&lt;code&gt;/etc/ssl/certificate.crt&lt;/code&gt;、&lt;code&gt;/etc/ssl/private.key&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;購買域名就不多說了，網路上面有很多的資料，也有很多的提供商可以選擇，這裡新域名以&lt;code&gt;eic.com&lt;/code&gt;舉例來申請ZeroSSL的證書，登入後直接到&lt;a class=&#34;link&#34; href=&#34;https://app.zerossl.com/certificate/new&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;這裡&lt;/a&gt;申請即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/30/wCGuWitElJzTBdS.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;比較重要的部分是驗證域名的時候&lt;code&gt;Verify Domain&lt;/code&gt;，會有&lt;code&gt;Email Verification&lt;/code&gt;、&lt;code&gt;DNS (CNAME)&lt;/code&gt;和&lt;code&gt;HTTP File Upload&lt;/code&gt;三個選項&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/30/WcUBYbJZhnVkQs2.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;一般而言我慣用後面兩種驗證方式，最喜歡的還是CNAME驗證，畢竟最簡單也最快，只要去domain name的管理頁面設定CNAME記錄再等一下就好，一方面是我沒有架email服務，另外就是如果是vps的話，做file upload verification可能就會花更多的時間，要用SSH、SFTP又會遇到權限問題之類的&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/30/gasv3LyM8PBDXbm.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;大致說明了一下步驟，沒有意外的話，通過驗證之後就會發行該域名對應的ssl證書，先把他下載下來並解壓，會得到&lt;code&gt;ca_bundle.crt&lt;/code&gt;、&lt;code&gt;certificate.crt&lt;/code&gt;、&lt;code&gt;private.key&lt;/code&gt;三個檔案，由於nginx所需的金鑰格式似乎與ZeroSSL發行的格式有一點差異，如果直接放到對應路徑，nginx啓動後就會出現如下報錯&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nginx: &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;emerg&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; PEM_read_bio_X509_AUX
+&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;SSL: error:0908F066:PEM routines:get_header_and_data:bad end line&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;來，直接上解法，terminal開到cert的解壓目錄，一行命令搞定他！：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; certificate.crt &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; cat certificate.crt ca_bundle.crt &amp;gt; certificate-all.crt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;而這個輸出的&lt;code&gt;certificate-all.crt&lt;/code&gt;就對應到nginx-conf中的&lt;code&gt;ssl_certificate&lt;/code&gt;項，接著把格式正確的金鑰複製到對應路徑&lt;code&gt;cp ./certificate-all.crt /etc/ssl/certificate.crt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;完成之後，以&lt;code&gt;sudo service nginx restart&lt;/code&gt;重啓nginx服務就大功告成啦！&lt;/p&gt;
+&lt;p&gt;究其原因，其實就是nginx所需的&lt;code&gt;ssl_certificate&lt;/code&gt;是ZeroSSL所生成的&lt;code&gt;certificate.crt + ca_bundle.crt&lt;/code&gt;，究竟是什麼格式我也懶得去釐清了，有空再來了解XD，而如果直接進行合併的話，會因為兩個crt之間沒有換行，合併完之後會造成下面這樣的窘況&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-crt-content&#34; data-lang=&#34;crt-content&#34;&gt;-----BEGIN CERTIFICATE-----
+certificate-content
+-----END CERTIFICATE----------BEGIN CERTIFICATE-----
+ca_bundle-content
+-----END CERTIFICATE-----
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;因此先做&lt;code&gt;echo &amp;quot;&amp;quot; &amp;gt;&amp;gt; certificate.crt&lt;/code&gt;，讓&lt;code&gt;certificate.crt&lt;/code&gt;在內文末端加上一個換行，再進行合併，即可解決這個問題&lt;/p&gt;
+&lt;p&gt;既然有了新的二級域名，那就順便加上cloudflare導流加速一下吧，因爲原本在&lt;code&gt;nctu.me&lt;/code&gt;申請的域名&lt;code&gt;eic.nctu.me&lt;/code&gt;算是&lt;code&gt;nctu.me&lt;/code&gt;的sub domain，我只能算是三級域的擁有者，而cloudflare並不接受三級域的申請，所以之前無法使用，之前還沒有玩過，來玩一下吧&lt;/p&gt;
+&lt;p&gt;到cloudflare註冊好帳號，填入擁有的域名之後，他就會去抓已存在的DNS Record，你可以調整你要讓cf代理的流量是哪幾個網址，這邊要注意的是cf只代理http(s)流量，所以如果你需要用某個網址當作SSH、FTP、Telnet的連線入口，要記得在對應的網址設上&lt;code&gt;僅DNS&lt;/code&gt; (如下圖中灰色的雲)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/30/vUENexa6gByXzi1.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;這邊設定完成之後，cf就會給你兩個DNS Server Address，讓你去Domain Name的管理頁面去替換掉原本服務提供商預設的，藉此把流量導到cf自己的DNS Server去解析，以達到導流、加速的功能
+設定完成後，回到cf的頁面按下檢查，去喝杯咖啡，等cf驗證通過之後會發email給你，這時就代表cf的設定是正確的而且有通啦～&lt;/p&gt;
+&lt;p&gt;最後最後，拉回本文的主要目標，是要重新設定這台與tg bot綁定的vps，由於網域也換新的了，Webhook也要重新設定，這邊如果你沒有記在其他地方的話，就要去BotFather那裡拿該bot的token，我拿到的是&lt;code&gt;1314505384:TT3dRx6MHgQAFEGw8fna3vrPxw44BuwCRkj&lt;/code&gt;，域名是&lt;code&gt;eic.com&lt;/code&gt;，因此敲敲下面這個命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ curl -F &lt;span class=&#34;s2&#34;&gt;&amp;#34;url=https://eic.com/api/homeBot/tgbot&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://api.telegram.org/bot1314505384:TT3dRx6MHgQAFEGw8fna3vrPxw44BuwCRkj/setWebhook&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你得到的回應是:&lt;code&gt;{&amp;quot;ok&amp;quot;:false,&amp;quot;error_code&amp;quot;:401,&amp;quot;description&amp;quot;:&amp;quot;Unauthorized&amp;quot;}&lt;/code&gt;，那請檢查token是不是拿錯了，以及&lt;code&gt;https://api.telegram.org/bot&lt;/code&gt;與token之間是沒有任何符號或是空白的喔！
+而正確的話，會得到以下回應：&lt;code&gt;{&amp;quot;ok&amp;quot;:true,&amp;quot;result&amp;quot;:true,&amp;quot;description&amp;quot;:&amp;quot;Webhook is already set&amp;quot;}&lt;/code&gt;，表示Webhook已經完成設定&lt;/p&gt;
+&lt;p&gt;好累&amp;hellip;一邊設定一邊寫這篇文章，不說了，我要去檢查其他跟nctu free domain name有關的服務了&amp;hellip;&amp;hellip;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Markdown Syntax Guide</title>
-        <link>https://liaojack8.github.io/p/markdown-syntax-guide/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>箴言(?)集</title>
+        <link>https://example.com/p/%E7%AE%B4%E8%A8%80%E9%9B%86/</link>
+        <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://liaojack8.github.io/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="https://liaojack8.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
-&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
-&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
-&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
-&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
-&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
-&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
-&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
-&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
-&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
-&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
-&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
-&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
-&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
-&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;!-- raw HTML omitted --&gt;
-— &lt;!-- raw HTML omitted --&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
-&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
+        <guid>https://example.com/p/%E7%AE%B4%E8%A8%80%E9%9B%86/</guid>
+        <description>&lt;img src="https://i.loli.net/2020/08/26/kDmd3bFjL6418gH.png" alt="Featured image of post 箴言(?)集" /&gt;&lt;h2 id=&#34;純粹分享一些我看到聽到想到的話&#34;&gt;純粹分享一些我看到、聽到、想到的話&lt;/h2&gt;
+&lt;p&gt;這些話，沒有一句是對的，但也沒有一句是錯的
+你也許可以在任何情況下，用這些話為自己開脫、給自己安慰，相對也能推著自己向前進
+這些話並沒有特別不一樣，與所有事物無異，他有著正反兩面，端看你怎麼用他
+如果你看著這些話，全然是激勵亦或全然是安慰，那也許，你看待這世界的眼光，還是太淺了&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;世界從來都不公平 你有多努力就有多特殊&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;擁有的都是僥倖，失敗的才是人生&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;你這一生要努力的，就是活成自己喜歡的樣子&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對待生命，你不妨大膽冒險一點，因為好歹你要失去他 ── 尼采&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It was harsh, but it was brilliant.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sometimes rules are made to be broken.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>我的人生態度</title>
+        <link>https://example.com/p/%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E6%85%8B%E5%BA%A6/</link>
+        <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E6%85%8B%E5%BA%A6/</guid>
+        <description>&lt;h2 id=&#34;不要害怕逃避&#34;&gt;不要害怕逃避&lt;/h2&gt;
+&lt;p&gt;不要去理會別人是怎麼說的，只有你最懂你自己，你只要相信自己作出的決定是對自己最好的就好，適當的承受壓力、面對挑戰，那是歷練，那是讓你能力變得更強大的途徑之一。
+我們總得承認，人生本就沒有事事如意，也許你是應該逆來順受，但你也應該了解自己能夠承受的界限，學會適時的喊停，因爲只有你最懂你自己，逃避未必就等價於懦弱，許多你認為強悍的所有，其實可能沒有想的強悍，甚至可能是脆弱的，在一些情況之下，逃避，或許是這道題的最佳解。&lt;/p&gt;
+&lt;h2 id=&#34;嘗試瞭解每一個領域&#34;&gt;嘗試瞭解每一個領域&lt;/h2&gt;
+&lt;p&gt;你可以只鑽研一個特定的領域，但你得保證你能夠成為那個領域、行業之中的佼佼者，這樣你才能坐擁不容易被取代的位置，其實這個世界，就像是一棵二元樹，資源是定量的，由上而下的資源只會越來越少，你要是不努力讓自己往上爬，那你永遠就只能享有那樣的資源，同時得面臨在上位者的打壓或是新世代的取代，也許你的生活會有很大的機率不會那麼的愉快。&lt;/p&gt;
+&lt;p&gt;你應該做的，是把握任何的機會去認識每一個你不熟悉的領域，你不需要特別做什麼，只需要盡你所能的瞭解，將其當作是你的背景知識。我不會跟你說的太多，因為我想的也可能是錯的。如果你覺得我說的毫無道理，那你不要聽進去，不要照做就是了。&lt;/p&gt;
+&lt;p&gt;沒有人知道未來的模樣是什麼輪廓。有人總說著AI新世代來臨，會導致某某行業人力需求大減&amp;hellip;&amp;hellip;。我們先不去討論這是不是在杞人憂天，假設這是真的，也許你可以因此很快速的轉換領域，避免被世代更迭淘汰掉，也許你跨領域的能力，沒辦法被AI取代。那如果他是假的呢？你也不會因此白做工，可能在未來的某一天，你看到了異業結合的可能性，他可以成為商機，你會因為你的背景知識，無意間發現這個領域的市場及需求，很適合進場分一杯羹、小賺一筆，當然，順利的話，你也可能因此搭上潮流，一夕致富。總之，這樣做並不會讓你吃虧，你甚至可能因此得到助益、擁有更多。&lt;/p&gt;
+&lt;h2 id=&#34;維持生活節奏&#34;&gt;維持生活節奏&lt;/h2&gt;
+&lt;p&gt;沒有人不按照習慣做事的，人體由大到小甚至連細胞，也是依循著慣性工作的，你應該維持好一定的生活節奏，即便你的生活被工作佔據，也許索然無味，甚至可能壓力大得讓你覺得每天都很疲憊，但維持好一個節奏，你的身體也會能夠適應這樣的生活，你依舊有辦法保持舒服的心情去面對每一天的挑戰。&lt;/p&gt;
+&lt;p&gt;人體也會需要你保持一定的生活節奏、習慣，只要你有適度的休息，平常的高壓、疲勞，也是可以被身體調節好的，才不會常常身體不舒服。不要讓任何事情拉走你的生活節奏，要是身不由己，也不該讓他一去不復返，畢竟這跟你的健康有關。&lt;/p&gt;
+&lt;h2 id=&#34;決定人生態度&#34;&gt;決定人生態度&lt;/h2&gt;
+&lt;p&gt;塑造你的行事風格、個性，決定你處理事情、看待事情的一貫風格，即便你未經世事，至少，你會顯得足夠的成熟穩重。嘴巴長在別人身上，你當然無法控制別人對你的說法，但凡事的評論，都是可以“養”出來的，久而久之，別人會認為你就是這個樣子的，認同你的自然會認同你，不認同的你也不用管他去哪裡了。對別人們來說，你有了一定的關聯性，你建立的連結，可以有一定的程度綁住他們的思維，你會得到你應該得到的尊重，因為你現在對他們來說是個咖了。&lt;/p&gt;
+&lt;p&gt;不過，衝動、沉不住氣、做事不經思考、不懂得深思熟慮，這些不叫做個性，也不是什麼態度風格，你可以說你就是這樣的人，反正我無所謂，我就說到這。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>MacOS使用homebrew基本教學</title>
+        <link>https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</link>
+        <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/macos%E4%BD%BF%E7%94%A8homebrew%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</guid>
+        <description>&lt;img src="https://i.loli.net/2020/08/12/D3Bdxlp7Qgfros1.png" alt="Featured image of post MacOS使用homebrew基本教學" /&gt;&lt;h2 id=&#34;簡介&#34;&gt;簡介&lt;/h2&gt;
+&lt;p&gt;使用Ruby開發的套件管理系統，可以很方便的進行套件管理，最常見的就是Github上的某個專案提供僅需要一行命令的簡便安裝方式：&lt;code&gt;brew install XXX&lt;/code&gt;，有些功能很棒的開源工具也藉助了homebrew而廣傳出去，並且讓非工程領域的使用者也可以順利的安裝與使用。&lt;/p&gt;
+&lt;h2 id=&#34;關於作者&#34;&gt;關於作者&lt;/h2&gt;
+&lt;p&gt;先說，我後來發現這邊好像寫了我覺得很好玩的事情~~(就是一堆廢話)~~，所以來玩homebrew的可以直接跳過這段XD&lt;/p&gt;
+&lt;p&gt;作者是Max Howell，為什麼會特別提到他呢，因為在reddit上面看過這位作者大大與Google發生的趣事，具體事情是怎麼樣，關鍵字：&lt;code&gt;max howell rejected by google&lt;/code&gt; 應該就可以找到不少的討論跟文章。簡單來說就是Max去Google面試，他遇到的面試官出了一個BST反轉的whiteboard interview problem (國外的面試很常會遇到這樣的環節，直翻中文就是白板面試問題，但我不知道有沒有人這樣用就是了)，然而他並不會這道在業界視為被理所當然要會的簡單問題，不知道是不是因爲他回答不出來，但最後他沒有成爲Googler，還在事後發了一篇tweet嘴Google，這件事情在網路上引起廣大討論，甚至有人跑去quora提了問題，想知道Google拒絕Max背後的考慮因素，也意外的讓Max本尊在底下回答到了他對於這個問題的看法。&lt;/p&gt;
+&lt;p&gt;還有一個也很有趣的事情就是，因爲這件事情leetcode上面也多了一道invert binary tree的問題，Description也直接寫著是因為Max的tweet讓他有了在leetcode上面出這道題的想法，剛剛上去瞄了一下，AC率超過6成XDD&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twitter.com/mxcl/status/608682016205344768&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Max的tweet原文&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://leetcode.com/problems/invert-binary-tree/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;226. Invert Binary Tree - leetcode&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/31202353&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我覺得知乎上還蠻有意思的討論串&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安裝&#34;&gt;安裝&lt;/h2&gt;
+&lt;p&gt;MacOS的安裝方法很簡單，就是一行命令而已，官方做的script很完善，基本上就是無腦貼上去就可以了&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ /bin/bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這行命令就是執行了官方提供的安裝腳本，如果你有興趣研究他都做了啥，可以去去看看source code&lt;/p&gt;
+&lt;h2 id=&#34;常用命令&#34;&gt;常用命令&lt;/h2&gt;
+&lt;p&gt;安裝套件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ brew install xxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安裝有GUI的套件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ brew cask install xxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;列出已安裝的套件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ brew list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;推薦套件&#34;&gt;推薦套件&lt;/h2&gt;
+&lt;p&gt;wget &amp;mdash; 不用說，終端機上最好用的直鏈下載套件
+xld &amp;mdash; flac音樂轉檔軟體
+youtube-dl &amp;mdash; 基本上是個youtube downloader，有在玩雲端串流的應該的知道他可以載m3u8 stream link
+ffmpeg &amp;mdash; 強大到不行的影音軟體，基本上只有你不會用的，沒有他做不到的
+zsh &amp;mdash; 不用說，讓terminal變漂亮、變更好用的套件
+diskmaker-x &amp;mdash; 有時候需要刻錄安裝隨身碟
+obs &amp;mdash; 現在應該沒有人不認識他吧
+sublime-text &amp;mdash; 厲害的editor不解釋
+node &amp;mdash; 就是node
+fuck &amp;mdash; 一個也算是有用處但超級好笑的套件，有興趣看這邊~ &lt;a class=&#34;link&#34; href=&#34;https://github.com/nvbn/thefuck&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;thefuck&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)</title>
+        <link>https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/</link>
+        <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%A3%93%E5%AD%97%E5%B9%95-%E7%A1%AC%E5%AD%97%E5%B9%95%E7%AF%87-mp4-srt/</guid>
+        <description>&lt;img src="https://i.loli.net/2020/08/13/qjLaxc4WithJk5C.png" alt="Featured image of post 使用ffmpeg壓字幕-硬字幕篇 (mp4&#43;srt)" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近又來亂玩了，基於之前弄的&lt;a class=&#34;link&#34; href=&#34;https://github.com/liaojack8/LineTVParser&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LineTV的影片解析&lt;/a&gt;，在LineTV上面弄某些劇下來的時候，會遇到影片字幕分離的情形，如果用的是KODI、emby或是一些能夠自動抓字幕檔串流平台，並且支援眾多編碼的話，那倒還好，基本上還不還有太大的影響，頂多就是預設字體太小，整體觀影感受不夠舒服罷了&lt;/p&gt;
+&lt;p&gt;但若是用電腦，或是早個幾年出來的“半智慧“電視，就算能夠解析srt，編碼也不見得支援的夠多，電視的話，或許FHD(60FPS)+解字幕+嵌入已經超載，處理器跟不上，整個使用體驗爛到難以形容，這裡拖那裡卡的&lt;/p&gt;
+&lt;p&gt;所以這次就研究了一下怎麽合併單檔，反正原檔也都留著，&lt;del&gt;GoogleDrive沒限制就隨便塞&lt;/del&gt;，或是剛好需要給長輩看的劇，就順便把字體弄大一點壓進去。&lt;/p&gt;
+&lt;h2 id=&#34;硬字幕軟字幕&#34;&gt;硬字幕、軟字幕&lt;/h2&gt;
+&lt;p&gt;我也不知道標題要怎麽下，反正我就是隨筆寫寫，給我自己做個記錄，我還是會儘量寫得詳細，能幫到你的話，再好不過，看不慣、不想看的不送&lt;/p&gt;
+&lt;p&gt;這些名詞應該是對岸來的，應該就是前幾年字幕組的時代出來的字吧&lt;/p&gt;
+&lt;h3 id=&#34;硬字幕&#34;&gt;硬字幕&lt;/h3&gt;
+&lt;p&gt;硬字幕，又稱為“內嵌字幕“，簡單地說，就是把字幕寫(壓)到影片中，按照srt定義的timestamp與subtitle content，把字幕壓到video stream中的每一個frame(這邊觀念不知道有沒有錯)，總之，硬字幕是沒辦法關掉的，已經壓在每一幀裡面了，完全無法分離，也沒辦法更改字體、大小之類的，優點就是對於播放裝置、播放軟體毫無要求，只要能夠解碼對應的影片格式，字幕就能夠正常顯示&lt;/p&gt;
+&lt;h3 id=&#34;軟字幕&#34;&gt;軟字幕&lt;/h3&gt;
+&lt;p&gt;軟字幕就被稱為”外掛字幕“，副檔名通常是.ass、.ssa、.sub，可以讓kodi自動抓進去內嵌，在播放程式支援的情況下，隨時可以調整字體、大小、顏色，也可以定義好之後封裝到影片裡面(mkv)，但就需要系統有對應的視訊解碼器、字元解碼器、渲染工具，不然就會有一堆莫名其妙的錯誤&lt;/p&gt;
+&lt;p&gt;這邊也就是大概解釋一下，字幕其實分了兩種，今天寫的就是操作上面比較簡單的硬字幕吧&lt;/p&gt;
+&lt;h2 id=&#34;說明&#34;&gt;說明&lt;/h2&gt;
+&lt;p&gt;先說一下最基本的用法吧：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;root@ASUSPRO:~#tree ./
+/
+├── ABC.srt
+└── ABC.mp4
+
+&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; directories, &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; files
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最簡單的用法，直接壓字幕，沒記錯的話default font size似乎是12&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ffmpeg -i ABC.mp4 -vf &lt;span class=&#34;s2&#34;&gt;&amp;#34;subtitles=ABC.srt&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果要另外修改字體大小為24&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ffmpeg -i ABC.mp4 -vf &lt;span class=&#34;s2&#34;&gt;&amp;#34;subtitles=ABC.srt:force_style=&amp;#39;Fontsize=24&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改字體大小為24 + 字體顏色為正藍色(0, 0, 255) ，這邊PrimaryColour一律以&lt;code&gt;&amp;amp;H&lt;/code&gt;開頭&lt;code&gt;&amp;amp;&lt;/code&gt;結尾，中間是16進制RGB色碼&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ffmpeg -i ABC.mp4 -vf &amp;quot;subtitles=ABC.srt:force_style=&#39;Fontsize=24,PrimaryColour=&amp;amp;H0000ff&amp;amp;&#39;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其實這邊用到的&lt;code&gt;force_style&lt;/code&gt;設定項，規範按照ASS的定義，有興趣的可以參考&lt;a class=&#34;link&#34; href=&#34;http://moodub.free.fr/video/ass-specs.doc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;這裡&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這裡舉例另外一個是我最常用的使用情境，就是整季都載完了XD，然後要下命令壓整個資料夾的影片，在命名有一定的規則的情況下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;root@ASUSPRO:~#tree ./
+/
+├── XYZ_EP1&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP1.mp4
+├── XYZ_EP2&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP2.mp4
+├── XYZ_EP3&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP3.mp4
+├── XYZ_EP4&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP4.mp4
+├── XYZ_EP5&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP5.mp4
+├── XYZ_EP6&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP6.mp4
+├── XYZ_EP7&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP7.mp4
+├── XYZ_EP8&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP8.mp4
+├── XYZ_EP9&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP9.mp4
+├── XYZ_EP10&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP10.mp4
+├── XYZ_EP11&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP11.mp4
+├── XYZ_EP12&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP12.mp4
+├── XYZ_EP13.mp4
+├── XYZ_EP13&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP14.mp4
+├── XYZ_EP14&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP15.mp4
+├── XYZ_EP15&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+├── XYZ_EP16.mp4
+└── XYZ_EP16&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Subtitle&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.srt
+
+&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; directories, &lt;span class=&#34;m&#34;&gt;32&lt;/span&gt; files
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; a in ./*.mp4&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; ffmpeg -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$a&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -vf &lt;span class=&#34;s2&#34;&gt;&amp;#34;subtitles=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;%.mp4&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;(Subtitle).srt:force_style=&amp;#39;Fontsize=24&amp;#39;&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;%.mp4&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;_cht.font24.mp4&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這樣下命令之後就可以丟著不用管了，他自己會壓完全部的檔案~~(燒CPU)~~，用ssh怕中斷的可以開個screen
+以上命令等價於下面這樣，至於為什麼就自己研究bash script去吧&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;XYZ_EP1.mp4 + XYZ_EP1(Subtitle).srt = XYZ_EP1_cht.font24.mp4
+...
+...
+...
+XYZ_EP16.mp4 + XYZ_EP16(Subtitle).srt = XYZ_EP16_cht.font24.mp4
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;今天就說到這裡吧，之後有用到什麼新的可能會更新在這裡或是開個另一篇這樣。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>如何為MongoDB加上使用者權限控制</title>
+        <link>https://example.com/p/%E5%A6%82%E4%BD%95%E7%82%BAmongodb%E5%8A%A0%E4%B8%8A%E4%BD%BF%E7%94%A8%E8%80%85%E6%AC%8A%E9%99%90%E6%8E%A7%E5%88%B6/</link>
+        <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/%E5%A6%82%E4%BD%95%E7%82%BAmongodb%E5%8A%A0%E4%B8%8A%E4%BD%BF%E7%94%A8%E8%80%85%E6%AC%8A%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
+        <description>&lt;img src="https://i.loli.net/2020/08/13/N563Qzikycmh4Xe.jpg" alt="Featured image of post 如何為MongoDB加上使用者權限控制" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;時隔半年，最近又回來用了MongoDB，之前只是裝來玩玩，其實也沒幹嘛&lt;/p&gt;
+&lt;p&gt;這裡先推薦一下&lt;code&gt;MongoDB Compass Community&lt;/code&gt;，正式釋出了，現在已經趨於穩定，使用上功能也很齊全&lt;/p&gt;
+&lt;p&gt;最近好像安裝的時候就會問你要不要一起裝Community，有GUI的工具可以輔助開發實在是太方便的一件事&lt;/p&gt;
+&lt;p&gt;這次需要讓主機對外，讓資料庫可以被遠端連接，記錄一下操作流程&lt;/p&gt;
+&lt;h2 id=&#34;操作步驟&#34;&gt;操作步驟&lt;/h2&gt;
+&lt;p&gt;先選擇使用admin資料庫&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ mongo
+&amp;gt; use admin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這裡放上我自己整理的表格，可以參考其設定使用者權限&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用者(用戶)說明(基於MongoDB v4.2 Manual)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;角色&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;權限說明&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Bob&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;&amp;mdash;資料庫使用者&amp;mdash;&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;mdash;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Alice&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Read&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;允許該使用者讀取指定資料庫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;readWrite&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;允許該使用者讀寫指定資料庫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;&amp;mdash;資料庫管理者&amp;mdash;&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;mdash;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;dbAdmin&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;允許該使用者在指定資料庫中執行管理函數 &lt;!-- raw HTML omitted --&gt; 例如索引編制、收集統計資訊&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;dbOwner&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;資料庫的擁有者，可以對資料庫執行任何管理操作 &lt;!-- raw HTML omitted --&gt; = &lt;code&gt;readWrite&lt;/code&gt; + &lt;code&gt;dbAdmin&lt;/code&gt; + &lt;code&gt;userAdmin&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;userAdmin&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;允許該使用者對其他使用者進行權限管控，可對users集群寫入 &lt;!-- raw HTML omitted --&gt; 對指定的資料庫新增/刪除使用者&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;&amp;mdash;叢集(集群)管理者&amp;mdash;&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;mdash; (這裡我就不太熟悉了)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;clusterAdmin&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;賦予最大的集群管理權限，也可&lt;code&gt;dropDatabase&lt;/code&gt; &lt;!-- raw HTML omitted --&gt; = &lt;code&gt;clusterManager&lt;/code&gt; + &lt;code&gt;clusterMonitor&lt;/code&gt; + &lt;code&gt;hostManager&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;clusterManager&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;賦予權限可對集群進行管理和監視&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;&amp;mdash;所有資料庫使用者&amp;mdash;&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;mdash;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;readAnyDatabase&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;賦予使用者所有資料庫(&lt;code&gt;local&lt;/code&gt;和&lt;code&gt;config&lt;/code&gt;除外)的讀取權限 &lt;!-- raw HTML omitted --&gt; 同時也能對整個集群進行&lt;code&gt;listDatabases&lt;/code&gt;操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;readWriteAnyDatabase&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;賦予使用者所有資料庫(&lt;code&gt;local&lt;/code&gt;和&lt;code&gt;config&lt;/code&gt;除外)的讀寫權限 &lt;!-- raw HTML omitted --&gt; 同時也能對整個集群進行&lt;code&gt;listDatabases&lt;/code&gt;操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;userAdminAnyDatabase&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;賦予使用者所有資料庫(&lt;code&gt;local&lt;/code&gt;和&lt;code&gt;config&lt;/code&gt;除外)的&lt;code&gt;userAdmin&lt;/code&gt;權限 &lt;!-- raw HTML omitted --&gt; 同時也能對整個集群進行以下幾種操作: &lt;!-- raw HTML omitted --&gt;&lt;code&gt;authSchemaUpgrade&lt;/code&gt; &lt;!-- raw HTML omitted --&gt; &lt;code&gt;invalidateUserCache&lt;/code&gt; &lt;!-- raw HTML omitted --&gt; &lt;code&gt;listDatabases&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;dbAdminAnyDatabase&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;賦予使用者所有資料庫(&lt;code&gt;local&lt;/code&gt;和&lt;code&gt;config&lt;/code&gt;除外)的&lt;code&gt;dbAdmin&lt;/code&gt;權限 &lt;!-- raw HTML omitted --&gt; 同時也能對整個集群進行&lt;code&gt;listDatabases&lt;/code&gt;操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;&amp;mdash;超級使用者&amp;mdash;&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;mdash;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;root&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;超級帳號，無權限限制。具體可使用的操作如下: &lt;!-- raw HTML omitted --&gt; &lt;code&gt;readWriteAnyDatabase&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;dbAdminAnyDatabase&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;userAdminAnyDatabase&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;clusterAdmin&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;restore&lt;/code&gt;&lt;!-- raw HTML omitted --&gt;&lt;code&gt;backup&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Italics&lt;/th&gt;
-&lt;th&gt;Bold&lt;/th&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h2&gt;
-&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
-&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;First item&lt;/li&gt;
-&lt;li&gt;Second item&lt;/li&gt;
-&lt;li&gt;Third item&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;List item&lt;/li&gt;
-&lt;li&gt;Another item&lt;/li&gt;
-&lt;li&gt;And another item&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Fruit
-&lt;ul&gt;
-&lt;li&gt;Apple&lt;/li&gt;
-&lt;li&gt;Orange&lt;/li&gt;
-&lt;li&gt;Banana&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Dairy
-&lt;ul&gt;
-&lt;li&gt;Milk&lt;/li&gt;
-&lt;li&gt;Cheese&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;GIF&lt;!-- raw HTML omitted --&gt; is a bitmap image format.&lt;/p&gt;
-&lt;p&gt;H&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O&lt;/p&gt;
-&lt;p&gt;X&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; + Y&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; = Z&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;ALT&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;Delete&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; to end the session.&lt;/p&gt;
-&lt;p&gt;Most &lt;!-- raw HTML omitted --&gt;salamanders&lt;!-- raw HTML omitted --&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;</description>
-        </item>
-        <item>
-        <title>Placeholder Text</title>
-        <link>https://liaojack8.github.io/p/placeholder-text/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://liaojack8.github.io/p/placeholder-text/</guid>
-        <description>&lt;img src="https://liaojack8.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
-&lt;li&gt;Duce pollice&lt;/li&gt;
-&lt;li&gt;Eris modo&lt;/li&gt;
-&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
-&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
-&lt;li&gt;Flumen querellas&lt;/li&gt;
-&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
-&lt;li&gt;Quidem et&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt&lt;/h1&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat&lt;/h2&gt;
-&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
-&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
-&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Math Typesetting</title>
-        <link>https://liaojack8.github.io/p/math-typesetting/</link>
-        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://liaojack8.github.io/p/math-typesetting/</guid>
-        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
-&lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Within this partial reference the &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
-&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
-&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Emoji Support</title>
-        <link>https://liaojack8.github.io/p/emoji-support/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://liaojack8.github.io/p/emoji-support/</guid>
-        <description>&lt;img src="https://liaojack8.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;http://www.emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.emoji {
-  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;p&gt;繼&lt;code&gt;use admin&lt;/code&gt;後，接著就直接建立使用者，語法格式如下，這裡寫上兩個常用範例&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;db.createUser(
+  {
+    user: &amp;quot;rootUser&amp;quot;,
+    pwd: &amp;quot;abcd1234&amp;quot;,
+    roles: [ { role: &amp;quot;root&amp;quot;, db: &amp;quot;admin&amp;quot; } ]
+  }
+)
+		// 用戶rootUser屬於超級使用者權限，管理者使用
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;db.createUser(
+  {
+    user: &amp;quot;Jerry&amp;quot;,
+    pwd: &amp;quot;Jerry123321&amp;quot;,
+    roles: [ { role: &amp;quot;readWrite&amp;quot;, db: &amp;quot;demo&amp;quot; } ]
+  }
+)
+		// 用戶Jerry可對資料庫demo進行讀寫操作，可對應使用平台、系統，做出身份區隔
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;相關指令&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;db.system.users.find()	//列出已存在之使用者
+db.dropUser()	//刪除使用者
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最後最後，要去配置mongodb的config file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo nano /etc/mongodb.conf
+&amp;gt; &lt;span class=&#34;nv&#34;&gt;auth&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;	//開啟身份驗證
+&amp;gt; &lt;span class=&#34;nv&#34;&gt;bind_ip&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; 0.0.0.0	//接受所有遠端連線，或直接指定固定ip
+	-Exit &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt; Save-
+$ sudo service mongodb restart	//重啟mongodb服務
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;當然也許你還需要開啟linux上的端口限制&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo iptables -A INPUT -s 0.0.0.0 -p tcp --destination-port &lt;span class=&#34;m&#34;&gt;27017&lt;/span&gt; -m state --state NEW,ESTABLISHED -j ACCEPT
+$ sudo iptables -A OUTPUT -d 0.0.0.0 -p tcp --source-port &lt;span class=&#34;m&#34;&gt;27017&lt;/span&gt; -m state --state ESTABLISHED -j ACCEPT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;而如果你使用的是VM compute service，就還需要設定服務平台上的端口放行&lt;/p&gt;
+&lt;p&gt;以GCP為例，可以使用cloud shell快速加入VPC網路防火牆的規則&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ gcloud compute firewall-rules create allow-mongodb --allow tcp:27017
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最後到對應的VM執行個體加上網路標記，就大功告成啦&amp;hellip;終於&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.mongodb.com/manual/reference/built-in-roles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.mongodb.com/manual/reference/built-in-roles&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>

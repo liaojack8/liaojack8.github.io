@@ -1,30 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Example Site</title>
-    <link>https://liaojack8.github.io/page/</link>
-    <description>Recent content in Pages on Example Site</description>
+    <title>Pages on EiC</title>
+    <link>https://example.com/page/</link>
+    <description>Recent content in Pages on EiC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://liaojack8.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Archives</title>
-      <link>https://liaojack8.github.io/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <title>About</title>
+      <link>https://example.com/about/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/archives/</guid>
-      <description></description>
+      <guid>https://example.com/about/</guid>
+      <description>簡介 常常在自己跟自己發生衝突，總之是一枚奇怪的人
+電子工程系大四生，勉強算是在保險業打滾了三年多，甚至打算要考業務員執照了&amp;hellip;看吧，有夠怪
+同時是學生、小開發者、創客、極客、軟硬體DIY玩家、3C科技愛好者
+追劇成癮，但也許是個狠人(？，可以看著醫療劇吃飯的人，硬要舉例的話大概就是韓國的醫療劇，特別寫實的那種
+MacOS愛好者，擁有幾台白果，但也是個黑蘋果玩家
+很愛亂玩，什麼都玩   網路滲透
+  接觸了Kali Linux、Virtual Machine，奠定了終端機的使用基礎(?
+  粗淺的了解802.11的幾種通訊協定、加密方式、系統交互方式、通訊流程、OSI架構
+    Android刷機
+  嘗試編譯了一個半殘(無觸屏功能)的twrp recovery，這讓我用了Ubuntu Linux好一段時間
+  學到了Linux下，檔案、分區操作的命令，用來做partition dump
+  也因此認識到檔案格式有對應的file header跟file footer，中文就是檔頭、檔尾
+  在這邊也學會用HEX Viewer之類的工具看檔案，分析檔案結構、算偏移、ASCII碼
+  用了不少的adb命令來對控制裝置，當時甚至做了筆記，數年後玩到Android Virtual Machine、寫過Android APP才知道原來這是官方訂定的一種協定、溝通橋樑，全名為Android Debug Bridge
+  為了救磚，學會了拆機，碰上了JTAG
+    Arduino + IoT
+現在想想，這段待在高職的時間基本上是玩得最瘋狂的一段時間了
+  從接觸開發板開始，懂了微處理機的基本概念
+  用了很多不同的板子、模組，深入理解過後，學到了COM Serial、RS-232、TTL、UART、I2C、SPI、AT command set。這下，我算是跟嵌入式系統沾的上一點邊了
+  學會看IC、零件、模組的datasheet，曾經拿到一個模組，事後覺得應該是仿製品，只有簡單的datasheet，說明了8Pin的pinmap、針腳定義、還有每次UART輸出的24Bytes資料的分段含義，甚至搬出了示波器在看data stream的波形</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://liaojack8.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Archives</title>
+      <link>https://example.com/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://liaojack8.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
+      <guid>https://example.com/archives/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MongoDB on EiC</title>
+    <link>https://example.com/categories/mongodb/</link>
+    <description>Recent content in MongoDB on EiC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何為MongoDB加上使用者權限控制</title>
+      <link>https://example.com/p/%E5%A6%82%E4%BD%95%E7%82%BAmongodb%E5%8A%A0%E4%B8%8A%E4%BD%BF%E7%94%A8%E8%80%85%E6%AC%8A%E9%99%90%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/%E5%A6%82%E4%BD%95%E7%82%BAmongodb%E5%8A%A0%E4%B8%8A%E4%BD%BF%E7%94%A8%E8%80%85%E6%AC%8A%E9%99%90%E6%8E%A7%E5%88%B6/</guid>
+      <description>前言 時隔半年，最近又回來用了MongoDB，之前只是裝來玩玩，其實也沒幹嘛
+這裡先推薦一下MongoDB Compass Community，正式釋出了，現在已經趨於穩定，使用上功能也很齊全
+最近好像安裝的時候就會問你要不要一起裝Community，有GUI的工具可以輔助開發實在是太方便的一件事
+這次需要讓主機對外，讓資料庫可以被遠端連接，記錄一下操作流程
+操作步驟 先選擇使用admin資料庫
+$ mongo &amp;gt; use admin 這裡放上我自己整理的表格，可以參考其設定使用者權限
+ 使用者(用戶)說明(基於MongoDB v4.2 Manual)     角色 權限說明     &amp;mdash;資料庫使用者&amp;mdash; &amp;mdash;   Read 允許該使用者讀取指定資料庫   readWrite 允許該使用者讀寫指定資料庫   &amp;mdash;資料庫管理者&amp;mdash; &amp;mdash;   dbAdmin 允許該使用者在指定資料庫中執行管理函數 例如索引編制、收集統計資訊   dbOwner 資料庫的擁有者，可以對資料庫執行任何管理操作 = readWrite + dbAdmin + userAdmin   userAdmin 允許該使用者對其他使用者進行權限管控，可對users集群寫入 對指定的資料庫新增/刪除使用者   &amp;mdash;叢集(集群)管理者&amp;mdash; &amp;mdash; (這裡我就不太熟悉了)   clusterAdmin 賦予最大的集群管理權限，也可dropDatabase = clusterManager + clusterMonitor + hostManager   clusterManager 賦予權限可對集群進行管理和監視   &amp;mdash;所有資料庫使用者&amp;mdash; &amp;mdash;   readAnyDatabase 賦予使用者所有資料庫(local和config除外)的讀取權限 同時也能對整個集群進行listDatabases操作   readWriteAnyDatabase 賦予使用者所有資料庫(local和config除外)的讀寫權限 同時也能對整個集群進行listDatabases操作   userAdminAnyDatabase 賦予使用者所有資料庫(local和config除外)的userAdmin權限 同時也能對整個集群進行以下幾種操作: authSchemaUpgrade invalidateUserCache listDatabases   dbAdminAnyDatabase 賦予使用者所有資料庫(local和config除外)的dbAdmin權限 同時也能對整個集群進行listDatabases操作   &amp;mdash;超級使用者&amp;mdash; &amp;mdash;   root 超級帳號，無權限限制。具體可使用的操作如下: readWriteAnyDatabasedbAdminAnyDatabaseuserAdminAnyDatabaseclusterAdminrestorebackup    繼use admin後，接著就直接建立使用者，語法格式如下，這裡寫上兩個常用範例</description>
+    </item>
+    
+  </channel>
+</rss>
